@@ -15,7 +15,6 @@ public class AppManager {
     String browser;
 
     public AppManager(String browser) {
-
         this.browser = browser;
     }
 
@@ -29,7 +28,7 @@ public class AppManager {
             wd = new InternetExplorerDriver();
         }
 
-        wd = new ChromeDriver();
+
         wd.manage().window().maximize();
         openSite("https://yandex.ru/");
 

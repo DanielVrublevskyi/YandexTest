@@ -11,7 +11,7 @@ public class MarketItemHelper extends HelperBase{
     }
 
     public void filterItem(Item item) {
-        click(By.cssSelector("[href^='/catalog--"+ item.getItemType() +"']"));
+        click(By.cssSelector("[href^='/catalog--" + item.getItemType() + "']"));
 
         type(By.cssSelector("[id='glpricefrom']"), item.getPriceFrom());
         type(By.cssSelector("[id='glpriceto']"), item.getPriceTo());

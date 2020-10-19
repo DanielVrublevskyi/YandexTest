@@ -13,6 +13,7 @@ public class SearchItemTest extends TestBase {
 
         app.getMainPage().switchToNextTab();
         app.getMarketHeader().selectComputerDepartment();
+        Thread.sleep(2000);
 
         app.getMarketItem().filterItem(new Item()
                 .setItemType("planshety")
@@ -29,6 +30,7 @@ public class SearchItemTest extends TestBase {
 
         String itemName = app.getMarketItem().getItemNameFromListByOrder(2);
         System.out.println(itemName);
+        Thread.sleep(2000);
 
         app.getMarketHeader().searchItemFromSearchBox(itemName);
         Thread.sleep(2000);
@@ -38,5 +40,6 @@ public class SearchItemTest extends TestBase {
 
     }
 
-
+//C:\Users\Daniel\Documents\GitHub\YandexTest> gradlew -Pbrowser=firefox clean testy
+//    C:\Users\Daniel\Documents\GitHub\YandexTest> gradlew testy
 }
