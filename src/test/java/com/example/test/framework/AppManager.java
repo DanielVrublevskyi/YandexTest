@@ -1,5 +1,6 @@
 package com.example.test.framework;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -57,5 +58,10 @@ public class AppManager {
 
     public MarketItemHelper getMarketItem() {
         return marketItem;
+    }
+
+    public void openMarket2(){
+        wd.findElement(By.cssSelector("#logoPartMarket")).click();
+
     }
 }

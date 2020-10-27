@@ -9,6 +9,17 @@ public class MainPageHelper extends HelperBase{
     }
 
     public void goToMarket() {
+
         click(By.cssSelector("[data-id='market']"));
+    }
+
+
+    public boolean isFFormPresent (){
+        return isElementPresent(By.cssSelector("[data-id='market']"));
+
+    }
+    public boolean isElementPresent (By locator){
+
+        return wd.findElements(locator).size()>0;
     }
 }

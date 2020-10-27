@@ -1,0 +1,4 @@
+20:52:01.372 [main] INFO  com.example.test.tests.TestBase - Start test testItem
+20:52:38.821 [main] INFO  com.example.test.tests.TestBase - Stop test testItem
+20:52:38.821 [main] INFO  com.example.test.tests.TestBase - Start test SecondTest
+20:53:11.868 [main] INFO  com.example.test.tests.TestBase - Stop test SecondTest

@@ -1,5 +1,6 @@
 package com.example.test.tests;
 
+import com.example.test.framework.HelperBase;
 import com.example.test.model.Item;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -9,9 +10,12 @@ public class SearchItemTest extends TestBase {
 
     @Test
     public void testItem() throws InterruptedException {
+//        app.openSite("https://yandex.ru/");
         app.getMainPage().goToMarket();
-
+        Thread.sleep(3000);
         app.getMainPage().switchToNextTab();
+
+
         app.getMarketHeader().selectComputerDepartment();
         Thread.sleep(2000);
 
@@ -42,4 +46,7 @@ public class SearchItemTest extends TestBase {
 
 //C:\Users\Daniel\Documents\GitHub\YandexTest> gradlew -Pbrowser=firefox clean testy
 //    C:\Users\Daniel\Documents\GitHub\YandexTest> gradlew testy
+
+
+
 }

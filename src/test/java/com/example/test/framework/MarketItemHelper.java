@@ -10,13 +10,15 @@ public class MarketItemHelper extends HelperBase{
         super(wd);
     }
 
-    public void filterItem(Item item) {
+    public void filterItem(Item item) throws InterruptedException {
         click(By.cssSelector("[href^='/catalog--" + item.getItemType() + "']"));
-
+        Thread.sleep(2000);
         type(By.cssSelector("[id='glpricefrom']"), item.getPriceFrom());
+        Thread.sleep(2000);
         type(By.cssSelector("[id='glpriceto']"), item.getPriceTo());
-
+        Thread.sleep(2000);
         click(By.xpath("//span[text()='"+ item.getBrand() +"']"));
+        Thread.sleep(2000);
     }
 
     public String getItemNameFromListByOrder(int number) {

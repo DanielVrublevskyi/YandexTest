@@ -10,7 +10,7 @@ public class MarketHeaderHelper extends HelperBase{
     }
 
     public void selectComputerDepartment() throws InterruptedException {
-       Thread.sleep(2000);
+       Thread.sleep(3000);
         click(By.cssSelector("[href*='kompiuternaia-tekhnika']"));
     }
 
