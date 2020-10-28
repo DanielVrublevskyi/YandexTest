@@ -32,5 +32,7 @@ public class SearchSecondTest extends  TestBase{
 
         String foundItemName = app.getMarketItem().getItemNameFromListByOrder(1);
         Assert.assertEquals(foundItemName,itemName);
+
+        
     }
 }
